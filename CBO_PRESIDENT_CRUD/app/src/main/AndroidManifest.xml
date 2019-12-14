@@ -12,10 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Rv_Ward.Rv_Ward_MainActivity"></activity>
+        <activity android:name=".Users_Form.Member_Form"></activity>
+        <activity android:name=".Users_Form.No_of_memebers_MainActicity" />
+        <activity android:name=".Rv_Ward.Rv_Ward_MainActivity" />
         <activity android:name=".List_Ward.List_Ward_MainActivity" /> <!-- <activity android:name=".List_CB_2.List_CB_2_MainActivity" /> -->
-        <activity android:name=".Rv_Swipe_CB.Rv_Swipe_CB_MainActivity" />
-        <!--<activity android:name=".Rv_CB.Rv_CB_MainActivity" />-->
+        <activity android:name=".Rv_Swipe_CB.Rv_Swipe_CB_MainActivity" /> <!-- <activity android:name=".Rv_CB.Rv_CB_MainActivity" /> -->
         <activity android:name=".List_CB.CB" />
         <activity
             android:name=".MainActivity"

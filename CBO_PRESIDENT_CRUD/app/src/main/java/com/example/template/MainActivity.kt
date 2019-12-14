@@ -9,6 +9,7 @@ import com.example.template.List_Ward.List_Ward_MainActivity
 //import com.example.template.Rv_CB.Rv_CB_MainActivity
 import com.example.template.Rv_Swipe_CB.Rv_Swipe_CB_MainActivity
 import com.example.template.Rv_Ward.Rv_Ward_MainActivity
+import com.example.template.Users_Form.No_of_memebers_MainActicity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btn_recycler.setOnClickListener{
-            val intent = Intent(context, Form::class.java)
+            val intent = Intent(context, No_of_memebers_MainActicity::class.java)
             startActivity(intent)
             //finish()
         //new changes
