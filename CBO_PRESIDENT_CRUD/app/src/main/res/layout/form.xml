@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <!--Card view starts-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--main Linear layout starts-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--heading: Details-->
+            <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Details:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textSize="40sp" />
+
+            <!--First Name-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="First Name"
+                android:id="@+id/fname"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:focusableInTouchMode="true"/>
+
+
+            <!--Middle Name-->
+            <EditText
+                android:id="@+id/mname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:duplicateParentState="false"
+                android:gravity="center"
+                android:hint="Middle Name"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textSize="20dp"
+                android:focusableInTouchMode="true"/>
+
+            <!--Last Name-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Last Name"
+                android:id="@+id/lname"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:focusableInTouchMode="true"/>
+
+            <!--Gender-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Gender:"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textAlignment="textStart"
+                    android:focusableInTouchMode="true"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Male"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Female"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:gravity="center"></RadioButton>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <!--Mobile number-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Contact No."
+                android:inputType="phone"
+                android:id="@+id/mobileno"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:focusableInTouchMode="true"/>
+
+        <!--Email ID-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:id="@+id/email"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:focusableInTouchMode="true"/>
+
+        <!--Address-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:hint="Address"
+                android:inputType="textImeMultiLine"
+                android:maxLines="4"
+                android:minLines="2"
+                android:id="@+id/address"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:textSize="20dp"
+                android:layout_gravity="top"
+                android:textAlignment="textStart"
+                android:focusableInTouchMode="true"/>
+
+         <!--DOB-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Date of Birth:"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textAlignment="textStart"
+                    android:paddingRight="5dp"
+                    ></TextView>
+
+                <Button
+                    android:id="@+id/btn_dob"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+
+                    android:layout_weight="0"
+                    android:text="Select"
+                    android:textSize="15dp"
+                    android:padding="5dp"/>
+
+                <!--                <button-->
+<!--                    android:id="@+id/btn_dob"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="select"></button>-->
+
+                <TextView
+                    android:id="@+id/dob_view"
+                    android:layout_width="115dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Date"></TextView>
+
+            </LinearLayout>
+
+        <!--Specially abled status-->
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Specially Abled Status:"
+                        android:padding="0dp"
+                        android:textSize="17dp"
+                        android:gravity="center"
+
+                        ></TextView>
+
+                    <RadioGroup
+                        android:id="@+id/rg_abled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Yes"
+                            android:textSize="18dp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rb_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No"
+                            android:textSize="18dp"
+                            android:padding="5dp"
+                            android:gravity="center"></RadioButton>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            <!--Qualification-->
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="131dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Qualification:"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"></TextView>
+
+                <Spinner
+                    android:id="@+id/qualification_options"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:hint="Select"
+                    android:padding="20dp"></Spinner>
+
+
+            </LinearLayout>
+
+            <!--Unique ID-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:orientation="horizontal"
+                android:paddingRight="20dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="131dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Unique ID:"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"></TextView>
+
+                <Spinner
+                    android:id="@+id/uniqueid_options"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:hint="Select"
+                    android:defaultFocusHighlightEnabled="true"
+                    android:padding="20dp"
+                    ></Spinner>
+
+
+            </LinearLayout>
+
+            <!--Caste-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Caste"
+                android:id="@+id/caste"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:focusableInTouchMode="true"/>
+
+            <!--Religion-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Religion"
+                android:id="@+id/religion"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:inputType="text"
+                android:textAlignment="textStart"
+                android:focusableInTouchMode="true"/>
+
+            <!--Annual Income-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Annual Income"
+                android:id="@+id/annualincome"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:inputType="number"
+                android:focusableInTouchMode="true"/>
+
+
+
+        <!-- end of main linear layout-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!--Card view ends-->
+</ScrollView>
